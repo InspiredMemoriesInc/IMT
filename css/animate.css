@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -12,7 +12,24 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
+.text_animate{
+	white-space:nowrap;
+	overflow: hidden;
+	width: 30em;
+	animation: type 5s steps(60, end) 1;	
+}
 
+/* let's animate, it's super easy */
+@keyframes type{
+	from{ width: 0;}
+}
+/*looks like something is wrong, Fixed!!! */
+
+/*let's make it more realistic, so I added span tag, let's animate span*/
+
+@keyframes blink{
+	to{ opacity: .0;}
+}
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
