@@ -101,11 +101,11 @@
                                 </button>
                             </div>
 
-                            <div class="nav-block right block-widgets">
+                            <!--<div class="nav-block right block-widgets">
                                 <div class="header-functions">
                                     <div class="header-widgets">
 
-                                        <!-- Top Menu -->
+                                         Top Menu 
                                         <div class="header-widget widget-menu" data-trigger="hover">
                                             <a href="#" id="top-lang-trigger" class="trigger-widget">Eng <i class="fa fa-angle-down"></i></a>
                                             <div class="widget-content nopadding">
@@ -119,7 +119,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <div class="nav-block block-menu">
                                 <ul class="menu">
@@ -333,7 +333,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center margintop-50">
-                            <a href="Contact Us" class="button button-rounded nomargin">Contact Us</a>
+                            <a href="services.html" class="button button-rounded nomargin">Services</a>
                         </div>
                     </div>
                 </div>
@@ -466,42 +466,42 @@
             </div>
         </section>-->
 
-        <!--<section class="section text-center">
+        <section class="section text-center">
             <div class="section-container">
                 <div class="container">
                     <h4 class="subtitle text-center">Our happy</h4>
-                    <h3 class="text-center marginbottom-50">Clients & Partners</h3>
+                    <h3 class="text-center marginbottom-50">Service Providers</h3>
                     <div class="row clients-row">
                         <div class="col-md-3 col-sm-6 client border-bottom border-right">
-                            <img src="demo/images/clients/client-1.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/1.png" alt="" width="250" height="54" />
                         </div>
                         <div class="col-md-3 col-sm-6 client border-bottom border-right">
-                            <img src="demo/images/clients/client-2.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/5.png" alt="" width="250" height="54" />
                         </div>
                         <div class="col-md-3 col-sm-6 client border-bottom border-right">
-                            <img src="demo/images/clients/client-3.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/3.png" alt="" width="250" height="54" />
                         </div>
                         <div class="col-md-3 col-sm-6 client border-bottom">
-                            <img src="demo/images/clients/client-4.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/4.png" alt="" width="250" height="54" />
                         </div>
                     </div>
                     <div class="row clients-row">
                         <div class="col-md-3 col-sm-6 client border-right">
-                            <img src="demo/images/clients/client-5.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/2.png" alt="" width="250" height="60" />
                         </div>
                         <div class="col-md-3 col-sm-6 client border-right">
-                            <img src="demo/images/clients/client-6.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/6.png" alt="" width="250" height="60" />
                         </div>
                         <div class="col-md-3 col-sm-6 client border-right">
-                            <img src="demo/images/clients/client-7.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/7.png" alt="" width="250" height="60" />
                         </div>
                         <div class="col-md-3 col-sm-6 client">
-                            <img src="demo/images/clients/client-8.png" alt="" width="200" height="54" />
+                            <img src="images/about/logos/8.png" alt="" width="208" height="60" />
                         </div>
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
 
         <section class="section background-grey">
             <div class="section-container">
@@ -604,13 +604,26 @@
             <div class="section-container">
                 <div class="container">
                     <h3 class="text-white">Start a project. Get in touch</h3>
-                    <a href="contact.html" class="button button-white button-rounded nobottommargin">Contact Us</a>
+                    <a href="#mfp-contact-modal" class="open-popup-link button button-rounded button-blue">Contact Us</a>
                 </div>
             </div>
             <!-- Overlay -->
             <div class="overlay">
                 <div class="overlay-color background"></div>
                 <div class="overlay-image parallax-background" style="background-image: url('images/home-header/3.jpg');" data-stellar-background-ratio="0.4"></div>
+            </div>
+            <div id="mfp-contact-modal" class="mfp-modal mfp-hide">
+                <div class="mfp-modal-content">
+                    <h3 class="heading-uppercase text-center margintop-40 marginbottom-40">Contact Form</h3>
+                    <form id="contact-form" method="post" action="include/sendemail.php">
+                        <input type="text" id="cf-name" name="cf-name" placeholder="Full Name" class="form-control required">
+                        <input type="email" id="cf-email" name="cf-email" placeholder="Email Address" class="form-control required">
+                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject" class="form-control required">
+                        <textarea name="cf-message" id="cf-message" placeholder="Message" class="form-control required" rows="6"></textarea>
+                        <div class="response-message"></div>
+                        <button class="button nomargin pull-right" type="submit" id="submit" name="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -671,7 +684,9 @@
                                     <ul>
                                         <li><a href="https://www.facebook.com/inspiredmemoriesimt/" class="social-icon social-clear"><i class="ion-social-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/weareIMT" class="social-icon social-clear"><i class="ion-social-twitter"></i></a></li>
-                                        <li><a href="https://plus.google.com/u/0/b/108075490631885665722/+InspiredmemoriesIn" class="social-icon social-clear"><i class="ion-social-googleplus"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/inspired-memories-imt-?" class="social-icon social-clear"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://plus.google.com/u/0/b/108075490631885665722/+InspiredmemoriesIn" class="social-icon social-clear"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://github.com/InspiredTechnologies" class="social-icon social-clear"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </nav>
                             </div>

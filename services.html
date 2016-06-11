@@ -290,12 +290,27 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <h3>Start a project. Get in touch</h3>
-                            <a href="#" class="button button-rounded nobottommargin">Contact Us</a>
+                            <a href="#mfp-contact-modal" class="open-popup-link button button-rounded button-blue">Contact Us</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="mfp-contact-modal" class="mfp-modal mfp-hide">
+                <div class="mfp-modal-content">
+                    <h3 class="heading-uppercase text-center margintop-40 marginbottom-40">Contact Form</h3>
+                    <form id="contact-form" method="post" action="include/sendemail.php">
+                        <input type="text" id="cf-name" name="cf-name" placeholder="Full Name" class="form-control required">
+                        <input type="email" id="cf-email" name="cf-email" placeholder="Email Address" class="form-control required">
+                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject" class="form-control required">
+                        <textarea name="cf-message" id="cf-message" placeholder="Message" class="form-control required" rows="6"></textarea>
+                        <div class="response-message"></div>
+                        <button class="button nomargin pull-right" type="submit" id="submit" name="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
+        
 
         <!-- Footer -->
         <footer class="site-footer section nobottompadding background-grey">
@@ -354,7 +369,9 @@
                                     <ul>
                                         <li><a href="https://www.facebook.com/inspiredmemoriesimt/" class="social-icon social-clear"><i class="ion-social-facebook"></i></a></li>
                                         <li><a href="https://twitter.com/weareIMT" class="social-icon social-clear"><i class="ion-social-twitter"></i></a></li>
-                                        <li><a href="https://plus.google.com/u/0/b/108075490631885665722/+InspiredmemoriesIn" class="social-icon social-clear"><i class="ion-social-googleplus"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/inspired-memories-imt-?" class="social-icon social-clear"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://plus.google.com/u/0/b/108075490631885665722/+InspiredmemoriesIn" class="social-icon social-clear"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://github.com/InspiredTechnologies" class="social-icon social-clear"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </nav>
                             </div>
